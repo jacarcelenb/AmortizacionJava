@@ -21,9 +21,9 @@ public class Principal {
         // tabla de amortizacion francesa
 
         // entradas
-        float monto = 45000;
-        int nummeses = 12;
-        double tasaInteres = 0.05; // 5% mensual
+        float monto = 5000;
+        int nummeses = 3;
+        double tasaInteres = 0.04; // 5% mensual
         double numerador = (tasaInteres * Math.pow((1 + tasaInteres), nummeses));
         double denominador = Math.pow((1 + tasaInteres), nummeses) - 1;
         double cuota = monto * (numerador / denominador);
@@ -37,8 +37,7 @@ public class Principal {
         System.out.println("Fecha Inicial");
         System.out.println(date);
 
-        // mesinicial + numeromeses <=12  sumar +1
-        // resulta 13 > sumar 1 al año  y mes = 01
+
         for (int i = 0; i <= nummeses; i++) {
 
             if (i == 0) {
