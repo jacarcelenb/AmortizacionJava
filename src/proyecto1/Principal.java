@@ -21,8 +21,8 @@ public class Principal {
         // tabla de amortizacion francesa
 
         // entradas
-        float monto = 1000;
-        int nummeses = 4;
+        float monto = 45000;
+        int nummeses = 12;
         double tasaInteres = 0.05; // 5% mensual
         double numerador = (tasaInteres * Math.pow((1 + tasaInteres), nummeses));
         double denominador = Math.pow((1 + tasaInteres), nummeses) - 1;
